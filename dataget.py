@@ -6,7 +6,7 @@ from pymongo import MongoClient
 import ast
 
 # Load parameters
-with open("secrets/keys.txt", "r") as f:
+with open("keys.txt", "r") as f:
     auth_dict = ast.literal_eval(f.read())
 
 # Create function for getting response
