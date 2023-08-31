@@ -10,7 +10,7 @@ with open("keys.txt", "r") as f:
     auth_dict = ast.literal_eval(f.read())
 
 # Create function for getting response
-def get_vessel(vessel_IMO_number, start_date=None, date_range="P60D"):
+def get_vessel(vessel_IMO_number, start_date=None, date_range="P90D"):
     parameters = {"vesselIMONumber" : vessel_IMO_number,
                   "carrierCodes" : "MAEU",
                   "startDate" : start_date,
